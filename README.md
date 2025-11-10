@@ -1,7 +1,7 @@
 # 🧠 Proyecto P4 básico — IPv4 Forwarding con BMv2 y Mininet
 
-Este proyecto implementa un **switch programable en P4** que realiza **reenvío de paquetes IPv4** (IP forwarding) usando una tabla de coincidencia por prefijo (*Longest Prefix Match – LPM*).  
-Está diseñado para funcionar sobre el entorno **BMv2 simple_switch** y **Mininet**.
+Este proyecto implementa un switch programable en P4 que realiza reenvío de paquetes IPv4 (IP forwarding) usando una tabla de coincidencia por prefijo (Longest Prefix Match – LPM).
+Está diseñado para funcionar sobre el entorno BMv2 simple_switch y Mininet, utilizando una topología sencilla compuesta por dos hosts (h1 y h2) conectados a través de un único switch P4 (s1).
 
 ---
 
