@@ -47,11 +47,6 @@ sudo simple_switch -i 1@s1-eth1 -i 2@s1-eth2 --thrift-port 9090 basic.json
 # Levantar Mininet (Terminal 2)
 sudo mn --custom topo.py --topo simpletopo --controller none
 
-# Programar tablas (Terminal 3)
-simple_switch_CLI --thrift-port 9090
-table_add MyIngress.ipv4_lpm MyIngress.ipv4_forward 10.0.0.1/32 => 00:00:00:00:00:01 1
-table_add MyIngress.ipv4_lpm MyIngress.ipv4_forward 10.0.0.2/32 => 00:00:00:00:00:02 2
-
 # Probar conexión
 mininet> h1 ping h2
 
